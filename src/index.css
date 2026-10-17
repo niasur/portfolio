@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@layer base {
+  *, ::before, ::after {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif !important;
+  }
+  html, body {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif !important;
+    background-color: #121212;
+    color: #f1f5f9;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace !important;
+  }
+}
+
+/* Subtle, clean scrollbar without harsh colors */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #383838;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Hide scrollbar utility for clean responsive tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Nav Link Active Indicator - Garis bawah hijau presisi pada menu aktif */
+.nav-link-active {
+  color: #ffffff !important;
+  position: relative;
+}
+.nav-link-active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: #2ec4b6;
+}
+
+/* Typewriter animation cursor */
+.typewrite-cursor {
+  display: inline-block;
+  width: 2px;
+  background-color: #2ec4b6;
+  animation: blink 0.8s infinite;
+  margin-left: 2px;
+  vertical-align: middle;
+  height: 1.1em;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Wave emoji animation */
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wave-hand {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave-animation 2.5s infinite;
+}
+
+/* Print Stylesheet for Automatic CV Download & Printing */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt;
+  }
+  
+  nav, footer, .no-print, #realtime-ticker, .fixed, .toast-container {
+    display: none !important;
+  }
+
+  .cv-printable-container {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+}
