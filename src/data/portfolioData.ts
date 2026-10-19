@@ -1,6 +1,37 @@
 // Portfolio data for Nia Surniati
 // Extracted accurately from presentation slides and curriculum vitae documents
 
+import imgWithLuv from '../assets/images/withluv_anabul.jpg';
+import imgEvaluasiKrs from '../assets/images/evaluasi_krs_dashboard.jpg';
+import imgEbookStore from '../assets/images/ebook_flutter_app.jpg';
+import imgPortfolioFlutterApp from '../assets/images/portfolio_flutter_app.jpg';
+import imgBookManagementSwagger from '../assets/images/task4_swagger.png';
+import imgSistemPenilaian from '../assets/images/sistem_penilaian_unipi.jpg';
+import imgMlPipeline from '../assets/images/ml_pipeline_eda_chart.jpg';
+import imgHealthcare from '../assets/images/rapidminer_healthcare_model.jpg';
+import imgSales from '../assets/images/rapidminer_sales_model.jpg';
+import imgBegalGallonApp1791175505230 from '../assets/images/begal_gallon_app_1791175505230.jpg';
+import imgAbsensiFaceApp1791175518149 from '../assets/images/absensi_face_app_1791175518149.jpg';
+import imgEcommerceFlutter from '../assets/images/ecommerce_flutter.jpg';
+import imgTask3EncryptionBanner from '../assets/images/task3_encryption_banner.png';
+import imgTask3EncryptSuccess from '../assets/images/task3/encrypt_success.png';
+import imgTask3DecryptWrongPass from '../assets/images/task3/decrypt_wrong_pass.png';
+import imgTask3DecryptSuccess from '../assets/images/task3/decrypt_success.png';
+import imgTask3ActivityLogs from '../assets/images/task3/activity_logs.png';
+import imgDockerCicdPipeline from '../assets/images/docker_cicd_pipeline.png';
+import imgReactTestingCoba7 from '../assets/images/react_testing_coba7.png';
+import imgTask2Week3Banner from '../assets/images/task2_week3_banner.png';
+import imgTask2Week3Tugas1Types from '../assets/images/task2_week3/tugas1_types.png';
+import imgTask2Week3Tugas1Math from '../assets/images/task2_week3/tugas1_math.png';
+import imgTask2Week3Tugas2Rpg from '../assets/images/task2_week3/tugas2_rpg.png';
+import imgFigmaMobileUiDesign from '../assets/images/figma_mobile_ui_design.jpg';
+import imgFigmaBegalUiDesign from '../assets/images/figma_begal_ui_design.jpg';
+import imgMlPipelineEdaChart from '../assets/images/ml_pipeline_eda_chart.jpg';
+import imgRapidminerHealthcareModel from '../assets/images/rapidminer_healthcare_model.jpg';
+import imgRapidminerSalesModel from '../assets/images/rapidminer_sales_model.jpg';
+import imgNovoClubProject from '../assets/images/novo_club_project.jpg';
+import imgGameSederhana from '../assets/images/game_sederhana.jpg';
+
 export interface ProjectScreenshot {
   title: string;
   image: string;
@@ -83,7 +114,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Fullstack & Web',
     summary: 'Platform pemesanan air galon secara online berbasis web yang memudahkan pelanggan memesan kebutuhan air minum harian ke depot terdekat dengan pelacakan status pesanan.',
     description: 'Proyek capstone tim MSIB Fullstack Web Development berupa platform end-to-end pemesanan galon air. Mengimplementasikan autentikasi pengguna, manajemen keranjang, katalog depot galon, formulir alamat pengantaran, kalkulasi ongkos kirim, dan dashboard admin untuk pemrosesan order secara realtime.',
-    image: '/src/assets/images/begal_gallon_app_1791175505230.jpg',
+    image: imgBegalGallonApp1791175505230,
     technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'REST API'],
     features: [
       'Katalog produk berbagai merk galon air minum',
@@ -103,7 +134,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Fullstack & Web',
     summary: 'Aplikasi web layanan grooming kucing lengkap dengan pemesanan online, integrasi WhatsApp, dashboard admin, pelacakan order, dan sistem rating pelanggan.',
     description: 'Membangun platform layanan perawatan kucing online berbasis Next.js 15 dan Prisma ORM dengan SQLite. Menyediakan katalog paket grooming, pemesanan online terintegrasi WhatsApp, pelacakan status pesanan, sistem rating ulasan, serta dashboard admin untuk pengelolaan booking.',
-    image: '/src/assets/images/withluv_anabul.jpg',
+    image: imgWithLuv,
     technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Prisma ORM', 'SQLite', 'Zustand', 'TanStack Query'],
     features: [
       'Katalog paket layanan grooming kucing terperinci beserta informasi diskon',
@@ -127,7 +158,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Fullstack & Web',
     summary: 'Sistem evaluasi usability berbasis USE Questionnaire dengan Skala Likert 1–5 untuk mengukur pengalaman pengguna fitur KRS SIAKAD UNIPEM.',
     description: 'Membangun aplikasi web evaluasi pengalaman pengguna (usability testing) terhadap fitur Kartu Rencana Studi (KRS) pada SIAKAD UNIPEM berbasis metode USE Questionnaire. Menyediakan instrumen kuesioner terstandarisasi mencakup 4 dimensi evaluasi (Usefulness, Ease of Use, Ease of Learning, dan Satisfaction) dengan skala Likert 1–5, formulir identitas mahasiswa terverifikasi, serta dashboard admin untuk agregasi dan visualisasi skor usability secara real-time.',
-    image: '/src/assets/images/evaluasi_krs_dashboard.jpg',
+    image: imgEvaluasiKrs,
     technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS', 'Vercel', 'USE Questionnaire', 'Skala Likert', 'Data Aggregation'],
     features: [
       'Instrumen evaluasi terstandarisasi 4 dimensi: Usefulness, Ease of Use, Ease of Learning, dan Satisfaction',
@@ -149,7 +180,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Mobile App',
     summary: 'Aplikasi presensi digital cerdas yang memanfaatkan deteksi wajah otomatis (Face Detection) menggunakan Google ML Kit dan deteksi lokasi otomatis via GPS.',
     description: 'Aplikasi mobile lengkap yang dibangun dengan Flutter untuk mempermudah presensi kehadiran karyawan atau mahasiswa. Dilengkapi fitur deteksi wajah langsung via kamera selfie, validasi radius koordinat GPS, perizinan cuti/sakit dengan rentang tanggal kalender, rekap riwayat absensi, serta dukungan Dark Mode.',
-    image: '/src/assets/images/absensi_face_app_1791175518149.jpg',
+    image: imgAbsensiFaceApp1791175518149,
     technologies: ['Flutter', 'Dart', 'Google ML Kit', 'Firebase Firestore', 'Firebase Auth', 'Android Studio'],
     features: [
       'Absensi foto selfie dengan deteksi kontur wajah otomatis (Google ML Kit)',
@@ -171,7 +202,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Mobile App',
     summary: 'Aplikasi e-commerce sederhana dan modern yang dibuat menggunakan Flutter dengan Firebase Authentication dan JSON Server untuk pengelolaan data belanja.',
     description: 'Membangun aplikasi toko online dengan navigasi modern, filter kategori produk dinamis, sistem pencarian kata kunci, fitur simpan barang favorit (wishlist), keranjang belanja, proses checkout, serta riwayat pembelian.',
-    image: '/src/assets/images/ecommerce_flutter.jpg',
+    image: imgEcommerceFlutter,
     technologies: ['Flutter', 'Dart', 'Firebase Auth', 'JSON Server', 'REST API', 'Provider State Management'],
     features: [
       'Autentikasi akun pengguna aman melalui Firebase Auth',
@@ -193,7 +224,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Mobile App',
     summary: 'Aplikasi toko buku digital berbasis Flutter untuk menjelajahi, memilih, dan membeli buku online dengan Firebase, JSON Server, dan animasi interaktif.',
     description: 'Membangun aplikasi toko buku online berbasis Flutter dengan navigasi modern, autentikasi pengguna via Firebase, sinkronisasi katalog buku di Firestore, integrasi data author via JSON Server, cache lokal SharedPreferences, serta animasi Lottie dan transisi Hero.',
-    image: '/src/assets/images/ebook_flutter_app.jpg',
+    image: imgEbookStore,
     technologies: ['Flutter', 'Dart', 'Firebase Auth', 'Cloud Firestore', 'JSON Server', 'HTTP Package', 'SharedPreferences', 'Lottie Animation', 'Material Design'],
     features: [
       'Autentikasi akun pengguna aman (Login & Register) dengan Firebase Authentication',
@@ -217,7 +248,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Mobile App',
     summary: 'Aplikasi mobile portofolio interaktif yang dibangun menggunakan Flutter dan Dart, menampilkan profil developer, navigasi kategori (Tools, Works, Experiences, Education), serta tautan media sosial.',
     description: 'Pengembangan aplikasi mobile portofolio personal yang bersih dan responsif menggunakan framework Flutter. Memuat halaman About Me, profil biodata pengembang, navigasi section karya & pengalaman, serta integrasi tombol tautan eksternal ke GitHub, LinkedIn, dan Instagram.',
-    image: '/src/assets/images/portfolio_flutter_app.jpg',
+    image: imgPortfolioFlutterApp,
     technologies: ['Flutter', 'Dart', 'Android', 'Mobile App', 'UI/UX Mobile', 'Git'],
     features: [
       'Halaman About Me interaktif dengan informasi profil developer Nia Sur',
@@ -239,7 +270,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Fullstack & Web',
     summary: 'Aplikasi web sistem informasi untuk pengelolaan dan kalkulasi nilai akademik mahasiswa, perancangan basis data terstruktur dengan relasi UML dan ERD.',
     description: 'Dibangun untuk memfasilitasi dosen dan staf program studi dalam menginput bobot penilaian tugas, UTS, UAS, serta menghasilkan kalkulasi IP/IPK otomatis dan cetak Kartu Hasil Studi (KHS). Dirancang menggunakan diagram UML, DFD, dan ERD untuk standardisasi software engineering.',
-    image: '/src/assets/images/sistem_penilaian_unipi.jpg',
+    image: imgEvaluasiKrs,
     technologies: ['PHP', 'MySQL', 'phpMyAdmin (XAMPP)', 'HTML5/CSS3', 'Bootstrap', 'ERD / UML'],
     features: [
       'Manajemen data mahasiswa, mata kuliah, dan dosen pengampu',
@@ -260,16 +291,16 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Backend & API',
     summary: 'Backend REST API untuk manajemen data buku dengan arsitektur MVC, autentikasi JWT, koneksi MongoDB, dan dokumentasi interaktif Swagger UI.',
     description: 'Menyediakan endpoint CRUD komprehensif (Create, Read, Update, Delete) untuk katalog perpustakaan buku. Dilengkapi sistem autentikasi & otorisasi JWT (JSON Web Token), hashing password Bcrypt, penanganan error handling terpusat, koneksi Mongoose ODM, dan integrasi Swagger UI documentation yang dapat langsung diuji secara interaktif via browser.',
-    image: '/src/assets/images/book_management_swagger.png',
+    image: imgBookManagementSwagger,
     screenshots: [
       {
         title: 'Tampilan Dokumentasi Interaktif Swagger UI (OAS 3.0)',
-        image: '/src/assets/images/task4_swagger.png',
+        image: imgBookManagementSwagger,
         caption: 'Dokumentasi antarmuka OpenAPI interaktif dengan endpoints POST /login, POST /books, GET /books, PUT /books/{id}, DELETE /books/{id}.'
       },
       {
         title: 'Verifikasi Koleksi Data Buku di MongoDB Database',
-        image: '/src/assets/images/task4_mongodb.png',
+        image: '', // TODO: isi dengan import gambar MongoDB yang benar
         caption: 'Koneksi database MongoDB Atlas menampilkan dokumen buku real (Laskar Pelangi, Garis Batas, Pulang) tersimpan rapi.'
       }
     ],
@@ -293,26 +324,26 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Backend & API',
     summary: 'Aplikasi enkripsi dan dekripsi file berbasis algoritma AES-256-CBC, pengamanan sandi dengan Scrypt KDF, inisialisasi IV dinamis, dan sistem audit logging otomatis di TypeScript / Node.js.',
     description: 'Mengembangkan sistem keamanan data dan kriptografi file menggunakan algoritma AES-256-CBC (Cipher Block Chaining) pada runtime Node.js & TypeScript. Dilengkapi derivasi kunci berbasis password pengguna menggunakan crypto.scryptSync dengan salt, pembangkitan vektor inisialisasi acak (randomBytes 16-byte) yang disematkan ke header ciphertext, verifikasi integritas dekripsi, penanganan error password salah (bad decrypt error handling), serta modul audit logger otomatis yang mencatat histori aktivitas setiap operasi enkripsi dan dekripsi dengan timestamp ISO terstruktur ke dalam direktori logs.',
-    image: '/src/assets/images/task3_encryption_banner.png',
+    image: imgTask3EncryptionBanner,
     screenshots: [
       {
         title: '1. Pengujian Enkripsi Berhasil & Verifikasi Terminal',
-        image: '/src/assets/images/task3/encrypt_success.png',
+        image: imgTask3EncryptSuccess,
         caption: 'Eksekusi CLI ts-node untuk mengenkripsi file teks (file.txt) dengan password menjadi file_encrypted.txt.'
       },
       {
         title: '2. Hasil File Terenkripsi (Ciphertext) & Validasi Password Salah',
-        image: '/src/assets/images/task3/decrypt_wrong_pass.png',
+        image: imgTask3DecryptWrongPass,
         caption: 'Tampilan ciphertext acak berproteksi tinggi serta penanganan error "bad decrypt" ketika password salah dimasukkan.'
       },
       {
         title: '3. Verifikasi Dekripsi Berhasil & Pemulihan Teks Asli',
-        image: '/src/assets/images/task3/decrypt_success.png',
+        image: imgTask3DecryptSuccess,
         caption: 'Pemulihan data plaintext 100% sempurna ke file_decrypted.txt menggunakan password otentik yang benar.'
       },
       {
         title: '4. Pencatatan Audit Log Otomatis dengan Timestamp ISO',
-        image: '/src/assets/images/task3/activity_logs.png',
+        image: imgTask3ActivityLogs,
         caption: 'Catatan rekaman log aktivitas (audit trail) otomatis di folder /logs dengan penanda waktu ISO untuk keamanan & transparansi.'
       }
     ],
@@ -337,7 +368,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Backend & API',
     summary: 'Implementasi pipeline Continuous Integration & Continuous Deployment (CI/CD) menggunakan GitHub Actions dan containerization Docker pada microservice API.',
     description: 'Mengonfigurasi workflow otomatis pada repository GitHub untuk mengeksekusi suite unit test pada setiap commit/pull request, membangun image Docker yang terisolasi, dan memverifikasi integritas build sebelum rilis.',
-    image: '/src/assets/images/docker_cicd_pipeline.png',
+    image: imgDockerCicdPipeline,
     technologies: ['Docker', 'GitHub Actions', 'Jest', 'Supertest', 'TypeScript', 'Node.js', 'CI/CD'],
     features: [
       'Automated pipeline yang memicu pengujian unit pada push/PR',
@@ -356,7 +387,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Fullstack & Web',
     summary: 'Penerapan metodologi pengujian komponen UI frontend (Unit & Integration Testing) serta integrasi CI/CD otomatis pada aplikasi web berbasis React.',
     description: 'Menulis test suite menggunakan React Testing Library dan Vitest/Jest untuk memverifikasi perilaku render, interaksi klik tombol pengguna, state updates, dan responsivitas antarmuka tanpa celah bug regresi.',
-    image: '/src/assets/images/react_testing_coba7.png',
+    image: imgReactTestingCoba7,
     technologies: ['React.js', 'React Testing Library', 'Jest', 'GitHub Actions', 'JavaScript'],
     features: [
       'Pengujian fungsionalitas tombol, formulir, dan state interaktif',
@@ -375,21 +406,21 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Backend & API',
     summary: 'Implementasi 25+ fitur type system TypeScript komprehensif, validasi static typing, kalkulator matematika fungsional, dan simulasi logika petualangan kerajaan berbasis state logic.',
     description: 'Proyek ini mempraktikkan fondasi pemrograman TypeScript secara mendalam dalam dua modul tugas utama: (1) Eksplorasi 25+ fitur type system TypeScript mulai dari static typing (primitif, union types, type alias, ANSI color enums, custom interface Person, function type, void, never error handling, hingga type assertion .length) serta kalkulator operasi matematika fungsional (penjumlahan, perkalian, pengurangan, pembagian); (2) Pengembangan simulasi petualangan pahlawan RPG (Arion) dengan pengelolaan kas emas kerajaan, kalkulasi pertempuran dan pengurangan poin kesehatan prajurit secara kondisional, serta rekapitulasi ringkasan misi Arion.',
-    image: '/src/assets/images/task2_week3_banner.png',
+    image: imgTask2Week3Banner,
     screenshots: [
       {
         title: '1. Modul 1: TypeScript Type System, Interfaces & Error Handling',
-        image: '/src/assets/images/task2_week3/tugas1_types.png',
+        image: imgTask2Week3Tugas1Types,
         caption: 'Kompilasi tsc dan eksekusi ts-node untuk verifikasi tipe data primitif, union, enums ANSI warna, fungsi void, serta penanganan try-catch error message.'
       },
       {
         title: '2. Modul 1: Tuple, Type Assertion & Functional Math Operations',
-        image: '/src/assets/images/task2_week3/tugas1_math.png',
+        image: imgTask2Week3Tugas1Math,
         caption: 'Pengujian tipe data array, tuple koordinat, unknown, type assertion string length, dan fungsi matematika murni (penjumlahan, perkalian, pengurangan, pembagian).'
       },
       {
         title: '3. Modul 2: RPG Game Simulation & Kingdom Mission Summary',
-        image: '/src/assets/images/task2_week3/tugas2_rpg.png',
+        image: imgTask2Week3Tugas2Rpg,
         caption: 'Simulasi petualangan Pahlawan Arion: pengelolaan kas emas kerajaan (5000 -> 6500), kalkulasi sisa kesehatan prajurit (95 HP), serta perolehan 75 XP.'
       }
     ],
@@ -414,7 +445,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'UI/UX & Desain',
     summary: 'Perancangan antarmuka pengguna (UI/UX) aplikasi mobile berbasis user-centered design, pembuatan komponen modular, dan prototype interaktif di Figma.',
     description: 'Merancang alur pengguna (user flow), wireframing low-fidelity hingga prototipe high-fidelity yang siap diimplementasikan oleh tim developer, lengkap dengan color palette dan hierarki tipografi.',
-    image: '/src/assets/images/figma_mobile_ui_design.jpg',
+    image: imgFigmaMobileUiDesign,
     technologies: ['Figma', 'Canva', 'Design Systems', 'Prototyping', 'Wireframing'],
     features: [
       'Komponen design system yang konsisten dan reusable',
@@ -432,7 +463,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'UI/UX & Desain',
     summary: 'Perancangan antarmuka pengguna (UI/UX) dan wireframe sistem web BEGAL (Beli Galon) menggunakan Figma dan Canva dengan pendekatan user-centered design.',
     description: 'Merancang antarmuka web responsif sistem pemesanan galon online BEGAL end-to-end. Meliputi perancangan komponen design system (typography, color palette, buttons, forms), wireframe alur pemesanan (browse to purchase), serta mockup desktop high-fidelity dari halaman beranda hingga proses checkout pesanan.',
-    image: '/src/assets/images/figma_begal_ui_design.jpg',
+    image: imgFigmaBegalUiDesign,
     technologies: ['Figma', 'Canva', 'UI/UX Design', 'Design System', 'Wireframing', 'Prototyping'],
     features: [
       'Komponen design system lengkap (palet warna, tipografi, button states, form input)',
@@ -451,7 +482,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Data & Riset',
     summary: 'Membangun alur Machine Learning komprehensif mulai dari pembersihan data, segmentasi pola dengan K-Means (Elbow Method), hingga klasifikasi Decision Tree.',
     description: 'Membangun alur Machine Learning komprehensif mulai dari pembersihan data, segmentasi pola menggunakan algoritma K-Means (Elbow Method), hingga pembuatan model prediksi klasifikasi otomatis.',
-    image: '/src/assets/images/ml_pipeline_eda_chart.jpg',
+    image: imgMlPipelineEdaChart,
     technologies: ['Python', 'Jupyter Notebook', 'Machine Learning', 'Scikit-Learn', 'K-Means Clustering', 'Decision Tree', 'PCA', 'Pandas'],
     features: [
       'Pembersihan data dan analisis eksploratif komprehensif (EDA & Preprocessing)',
@@ -472,7 +503,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Data & Riset',
     summary: 'Estimasi matematis data historis rekam medis menggunakan algoritma Regresi Linear (X, Y, konstanta, dan koefisien) untuk memprediksi lonjakan kunjungan pasien puskesmas.',
     description: 'Melakukan perhitungan estimasi data historis rekam medis menggunakan perumusan matematis algoritma Regresi Linear (pencarian nilai X, Y, Konstanta, dan Koefisien) untuk memprediksi lonjakan kunjungan pasien puskesmas di masa depan.',
-    image: '/src/assets/images/rapidminer_healthcare_model.jpg',
+    image: imgRapidminerHealthcareModel,
     technologies: ['Linear Regression', 'RapidMiner', 'Microsoft Excel', 'Statistical Modeling', 'Predictive Analytics', 'Healthcare Data'],
     features: [
       'Perumusan matematis algoritma Regresi Linear: kalkulasi variabel X, Y, nilai konstanta, dan koefisien regresi',
@@ -493,7 +524,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Data & Riset',
     summary: 'Model estimasi Regresi Linear untuk mengevaluasi efektivitas alokasi anggaran iklan terhadap tingkat penjualan produk secara objektif.',
     description: 'Membangun model estimasi Regresi Linear untuk mengevaluasi efektivitas alokasi anggaran iklan (TV, Radio, Koran) terhadap tingkat penjualan produk secara objektif untuk mendukung keputusan bisnis.',
-    image: '/src/assets/images/rapidminer_sales_model.jpg',
+    image: imgRapidminerSalesModel,
     technologies: ['RapidMiner', 'Linear Regression', 'Data Mining', 'Predictive Analytics', 'Marketing Mix Modeling', 'Business Intelligence'],
     features: [
       'Pemodelan Multiple Linear Regression untuk mengevaluasi dampak pengeluaran iklan terhadap penjualan',
@@ -514,7 +545,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'UI/UX & Desain',
     summary: 'Inisiatif proyek sosial kolaboratif kepemimpinan Novo Club dari ParagonCorp, berperan sebagai Humas, desainer konten, dan dokumentasi kampanye.',
     description: 'Mengembangkan materi publikasi kampanye gaya hidup sehat bagi generasi muda, mengoordinir penyuluhan interaktif, serta menyusun materi presentasi dan media komunikasi visual.',
-    image: '/src/assets/images/novo_club_project.jpg',
+    image: imgNovoClubProject,
     technologies: ['Public Relations', 'Canva', 'Content Strategy', 'Project Management'],
     features: [
       'Perancangan materi edukasi visual dan presentasi publik',
@@ -533,7 +564,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'Game Development',
     summary: 'Pengembangan game 2D interaktif sederhana menggunakan GameMaker 8.1 dan Construct 2, mencakup logika mekanik rintangan, pergerakan karakter, deteksi tabrakan (collision), dan sistem skor.',
     description: 'Proyek pengembangan game 2D edukatif dan hiburan sederhana menggunakan engine GameMaker 8.1 dan Construct 2. Mengimplementasikan logika pemrograman game berbasis event & visual scripting, penanganan physics, pengaturan collision objek rintangan, pergerakan karakter, sound effect, serta pengelolaan level game.',
-    image: '/src/assets/images/game_sederhana.jpg',
+    image: imgGameSederhana,
     technologies: ['GameMaker 8.1', 'Construct 2', 'Game Development', '2D Physics', 'Game Design', 'Logic Scripting'],
     features: [
       'Mekanik pergerakan karakter 2D yang responsif',
